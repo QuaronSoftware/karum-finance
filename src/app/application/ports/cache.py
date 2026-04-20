@@ -1,0 +1,9 @@
+from typing import Protocol, TypeVar
+
+T = TypeVar("T")
+
+
+class Cache(Protocol):
+    async def get(self, key: str) -> object | None: ...
+    async def set(self, key: str, value: object, ttl: int | None = None) -> None: ...
+    async def delete(self, key: str) -> None: ...

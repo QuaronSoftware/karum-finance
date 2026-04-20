@@ -1,0 +1,92 @@
+[
+  { "id": "income", "name": "Income", "type": "income", "parent_id": null },
+
+  { "id": "salary", "name": "Salary", "type": "income", "parent_id": "income" },
+  { "id": "business", "name": "Business", "type": "income", "parent_id": "income" },
+  { "id": "freelance", "name": "Freelance", "type": "income", "parent_id": "income" },
+  { "id": "investments_income", "name": "Investments", "type": "income", "parent_id": "income" },
+  { "id": "other_income", "name": "Other Income", "type": "income", "parent_id": "income" },
+
+  { "id": "savings", "name": "Savings", "type": "saving", "parent_id": null },
+
+  { "id": "emergency_fund", "name": "Emergency Fund", "type": "saving", "parent_id": "savings" },
+  { "id": "retirement", "name": "Retirement", "type": "saving", "parent_id": "savings" },
+  { "id": "investments_savings", "name": "Investments", "type": "saving", "parent_id": "savings" },
+  { "id": "sinking_funds", "name": "Sinking Funds", "type": "saving", "parent_id": "savings" },
+  { "id": "other_savings", "name": "Other Savings", "type": "saving", "parent_id": "savings" },
+
+  { "id": "debt", "name": "Debt", "type": "debt", "parent_id": null },
+
+  { "id": "credit_cards", "name": "Credit Cards", "type": "debt", "parent_id": "debt" },
+  { "id": "loans", "name": "Loans", "type": "debt", "parent_id": "debt" },
+  { "id": "mortgage_debt", "name": "Mortgage", "type": "debt", "parent_id": "debt" },
+  { "id": "student_loans", "name": "Student Loans", "type": "debt", "parent_id": "debt" },
+  { "id": "other_debt", "name": "Other Debt", "type": "debt", "parent_id": "debt" },
+
+  { "id": "housing", "name": "Housing", "type": "expense", "parent_id": null },
+
+  { "id": "rent", "name": "Rent", "type": "expense", "parent_id": "housing" },
+  { "id": "mortgage", "name": "Mortgage Payment", "type": "expense", "parent_id": "housing" },
+  { "id": "property_taxes", "name": "Property Taxes", "type": "expense", "parent_id": "housing" },
+  { "id": "home_maintenance", "name": "Home Maintenance", "type": "expense", "parent_id": "housing" },
+  { "id": "home_improvement", "name": "Home Improvement", "type": "expense", "parent_id": "housing" },
+  { "id": "hoa_fees", "name": "HOA Fees", "type": "expense", "parent_id": "housing" },
+
+  { "id": "utilities", "name": "Utilities", "type": "expense", "parent_id": null },
+
+  { "id": "electricity", "name": "Electricity", "type": "expense", "parent_id": "utilities" },
+  { "id": "water", "name": "Water", "type": "expense", "parent_id": "utilities" },
+  { "id": "gas", "name": "Gas", "type": "expense", "parent_id": "utilities" },
+  { "id": "internet", "name": "Internet", "type": "expense", "parent_id": "utilities" },
+  { "id": "phone", "name": "Phone", "type": "expense", "parent_id": "utilities" },
+  { "id": "trash", "name": "Trash", "type": "expense", "parent_id": "utilities" },
+  { "id": "other_utilities", "name": "Other Utilities", "type": "expense", "parent_id": "utilities" },
+
+  { "id": "food", "name": "Food", "type": "expense", "parent_id": null },
+
+  { "id": "groceries", "name": "Groceries", "type": "expense", "parent_id": "food" },
+  { "id": "restaurants", "name": "Restaurants", "type": "expense", "parent_id": "food" },
+  { "id": "coffee_shops", "name": "Coffee Shops", "type": "expense", "parent_id": "food" },
+  { "id": "takeout", "name": "Takeout", "type": "expense", "parent_id": "food" },
+  { "id": "other_food", "name": "Other Food", "type": "expense", "parent_id": "food" },
+
+  { "id": "transportation", "name": "Transportation", "type": "expense", "parent_id": null },
+
+  { "id": "fuel", "name": "Fuel", "type": "expense", "parent_id": "transportation" },
+  { "id": "car_payment", "name": "Car Payment", "type": "expense", "parent_id": "transportation" },
+  { "id": "car_maintenance", "name": "Car Maintenance", "type": "expense", "parent_id": "transportation" },
+  { "id": "transport_insurance", "name": "Insurance", "type": "expense", "parent_id": "transportation" },
+  { "id": "public_transport", "name": "Public Transport", "type": "expense", "parent_id": "transportation" },
+  { "id": "parking", "name": "Parking", "type": "expense", "parent_id": "transportation" },
+  { "id": "other_transport", "name": "Other Transport", "type": "expense", "parent_id": "transportation" },
+
+  { "id": "insurance", "name": "Insurance", "type": "expense", "parent_id": null },
+
+  { "id": "health_insurance", "name": "Health Insurance", "type": "expense", "parent_id": "insurance" },
+  { "id": "car_insurance", "name": "Car Insurance", "type": "expense", "parent_id": "insurance" },
+  { "id": "home_insurance", "name": "Home Insurance", "type": "expense", "parent_id": "insurance" },
+  { "id": "life_insurance", "name": "Life Insurance", "type": "expense", "parent_id": "insurance" },
+  { "id": "other_insurance", "name": "Other Insurance", "type": "expense", "parent_id": "insurance" },
+
+  { "id": "entertainment", "name": "Entertainment", "type": "expense", "parent_id": null },
+
+  { "id": "movies", "name": "Movies", "type": "expense", "parent_id": "entertainment" },
+  { "id": "games", "name": "Games", "type": "expense", "parent_id": "entertainment" },
+  { "id": "hobbies", "name": "Hobbies", "type": "expense", "parent_id": "entertainment" },
+  { "id": "events", "name": "Events", "type": "expense", "parent_id": "entertainment" },
+  { "id": "subscriptions", "name": "Subscriptions", "type": "expense", "parent_id": "entertainment" },
+
+  { "id": "travel", "name": "Travel", "type": "expense", "parent_id": null },
+
+  { "id": "travel_transport", "name": "Transport", "type": "expense", "parent_id": "travel" },
+  { "id": "accommodation", "name": "Accommodation", "type": "expense", "parent_id": "travel" },
+  { "id": "tickets", "name": "Tickets", "type": "expense", "parent_id": "travel" },
+  { "id": "travel_insurance", "name": "Insurance", "type": "expense", "parent_id": "travel" },
+  { "id": "other_travel", "name": "Other Travel", "type": "expense", "parent_id": "travel" },
+
+  { "id": "misc", "name": "Misc", "type": "expense", "parent_id": null },
+
+  { "id": "unexpected", "name": "Unexpected", "type": "expense", "parent_id": "misc" },
+  { "id": "fees", "name": "Fees", "type": "expense", "parent_id": "misc" },
+  { "id": "other", "name": "Other", "type": "expense", "parent_id": "misc" }
+]
