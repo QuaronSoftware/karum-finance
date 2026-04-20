@@ -1,0 +1,13 @@
+from datetime import datetime
+from typing import Protocol
+from karum.domain.entity import Transaction
+
+
+class WalletProvider(Protocol):
+    async def get_transactions(self, wallet_id: int, wallet_external_id: str, start_date: datetime | None, end_date: datetime | None) -> tuple[Transaction, ...]:  ...
+    async def get_wallets_ids(self) -> tuple[str, ...]: ...
+
+    @property
+    def external_id(self) -> str: ...
+    async def close(self) -> None: ...
+

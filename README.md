@@ -75,7 +75,7 @@ export DATABASE_URL="postgresql+asyncpg://user:pass@localhost/dbname" && alembic
 ### Development
 
 ``` bash
-uv run uvicorn app.main:main --app-dir src --reload --factory
+uv run uvicorn karum.main:main --app-dir src --reload --factory
 ```
 
 ------------------------------------------------------------------------
@@ -83,14 +83,14 @@ uv run uvicorn app.main:main --app-dir src --reload --factory
 ### Production
 
 ``` bash
-uv run uvicorn app.main:main --app-dir src --factory
+uv run uvicorn karum.main:main --app-dir src --factory
 ```
 
 ------------------------------------------------------------------------
 
 ## 📁 Project Structure
 
-    src/app/
+    src/karum/
       config/           # settings .env
       domain/           # core business logic
       application/      # use cases & services
