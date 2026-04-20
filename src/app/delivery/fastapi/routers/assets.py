@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends
 from app.application.use_case import GetAccountOverviewUseCase
-from app.infra.fastapi.dependencies import get_account_overview_use_case
+from app.delivery.fastapi.dependencies import get_account_overview_use_case
 
 
 assets_router = APIRouter(prefix='/assets')

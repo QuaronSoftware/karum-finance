@@ -1,6 +1,6 @@
 import logging
 from app.config import load_settings
-from app.infra.fastapi import create_app
+from app.delivery.fastapi import create_app
 from app.infra.db.engine import build_uow
 from app.infra.cache import TTLMemoryCache
 from app.infra.category import JsonCategoryReader

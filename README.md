@@ -46,10 +46,7 @@ cd karum-finance
 
 Create a `.env` file in the root directory:
 
-``` env
-DATABASE_URL=postgresql+asyncpg://user:pass@localhost/dbname
-REDIS_URL=redis://localhost:6379/0
-```
+.env.example
 
 ------------------------------------------------------------------------
 
@@ -98,6 +95,7 @@ uv run uvicorn app.main:main --app-dir src --factory
       domain/           # core business logic
       application/      # use cases & services
       infra/            # db, providers, external APIs
+      delivery/         # API / routers
       shared/           # utils
 
 ------------------------------------------------------------------------
